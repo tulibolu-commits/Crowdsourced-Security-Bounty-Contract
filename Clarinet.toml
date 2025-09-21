@@ -1,0 +1,28 @@
+[project]
+name = 'Crowdsourced-Security-Bounty-Contract'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.Crowdsourced-Security-Bounty-Contract]
+path = 'contracts/Crowdsourced-Security-Bounty-Contract.clar'
+clarity_version = 1
+epoch = '2.0'
+
+[contracts.bounty-escrow-funding]
+path = 'contracts/bounty-escrow-funding.clar'
+clarity_version = 1
+epoch = '2.0'
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
